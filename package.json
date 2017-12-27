@@ -6,10 +6,9 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "electron-forge start",
-    "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "tslint --project tsconfig.json --type-check --force"
+    "test": "rimraf out && jest"
   },
   "keywords": [],
   "author": "jairo.viciana",
@@ -37,8 +36,8 @@
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
       "github_repository": {
-        "owner": "",
-        "name": ""
+        "owner": "kidandcat",
+        "name": "architecture-react-redux-observable-typescript-electron"
       },
       "windowsStoreConfig": {
         "packageName": "",
@@ -48,19 +47,26 @@
   },
   "dependencies": {
     "@types/electron-devtools-installer": "^2.0.2",
+    "@types/enzyme": "^3.1.6",
+    "@types/jest": "^21.1.9",
     "@types/react": "^0.14.55",
     "@types/react-dom": "^0.14.20",
     "electron-compile": "^6.4.2",
     "electron-devtools-installer": "^2.1.0",
     "electron-squirrel-startup": "^1.0.0",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.0.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-observable": "^0.17.0",
     "reselect": "^3.0.1",
+    "rimraf": "^2.6.2",
     "rxjs": "^5.5.6",
+    "ts-jest": "^22.0.0",
     "tslib": "^1.4.0"
   },
   "devDependencies": {
@@ -71,5 +77,20 @@
     "electron-prebuilt-compile": "1.8.2-beta.3",
     "tslint": "^5.1.0",
     "typescript": "~2.2.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "setupFiles": [
+      "./test-setup/shims.js",
+      "./test-setup/.jestrc.js"
+    ],
+    "testRegex": "/src/.*\\.test\\.(ts|tsx|js)$"
   }
 }

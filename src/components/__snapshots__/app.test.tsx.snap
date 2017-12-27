@@ -21,21 +21,10 @@ ShallowWrapper {
         <h1>
           Hello World!
         </h1>,
+        <Connect(ColorChanger) />,
         <div>
-          <ColorChanger />
-          Here you have a Clock coloured with
-           
-          <span
-            style={
-              Object {
-                "color": "black",
-              }
-            }
-          >
-            black
-          </span>
-          :
-          <Clock />
+          Here you have othe Clock:
+          <Connect(Clock) />
         </div>,
       ],
     },
@@ -55,53 +44,25 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <ColorChanger />,
-            "Here you have a Clock coloured with",
-            " ",
-            <span
-              style={
-                Object {
-                  "color": "black",
-                }
-              }
-            >
-              black
-            </span>,
-            ":",
-            <Clock />,
+            "Here you have othe Clock:",
+            <Connect(Clock) />,
           ],
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "Here you have a Clock coloured with",
-          " ",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "black",
-              "style": Object {
-                "color": "black",
-              },
-            },
-            "ref": null,
-            "rendered": "black",
-            "type": "span",
-          },
-          ":",
+          "Here you have othe Clock:",
           Object {
             "instance": null,
             "key": undefined,
@@ -127,21 +88,10 @@ ShallowWrapper {
           <h1>
             Hello World!
           </h1>,
+          <Connect(ColorChanger) />,
           <div>
-            <ColorChanger />
-            Here you have a Clock coloured with
-             
-            <span
-              style={
-                Object {
-                  "color": "black",
-                }
-              }
-            >
-              black
-            </span>
-            :
-            <Clock />
+            Here you have othe Clock:
+            <Connect(Clock) />
           </div>,
         ],
       },
@@ -161,53 +111,25 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <ColorChanger />,
-              "Here you have a Clock coloured with",
-              " ",
-              <span
-                style={
-                  Object {
-                    "color": "black",
-                  }
-                }
-              >
-                black
-              </span>,
-              ":",
-              <Clock />,
+              "Here you have othe Clock:",
+              <Connect(Clock) />,
             ],
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "Here you have a Clock coloured with",
-            " ",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "black",
-                "style": Object {
-                  "color": "black",
-                },
-              },
-              "ref": null,
-              "rendered": "black",
-              "type": "span",
-            },
-            ":",
+            "Here you have othe Clock:",
             Object {
               "instance": null,
               "key": undefined,
